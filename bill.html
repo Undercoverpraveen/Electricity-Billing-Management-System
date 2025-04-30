@@ -1,0 +1,13 @@
+<h2>Generate Bill</h2>
+<form method="post">
+    Customer:
+    <select name="customer_id" required>
+        {% for customer in customers %}
+            <option value="{{ customer[0] }}">{{ customer[1] }}</option>
+        {% endfor %}
+    </select><br>
+    Units Consumed: <input type="number" name="units" required><br>
+    Date: <input type="date" name="date" required><br>
+    <button type="submit">Generate</button>
+</form>
+<a href="/">Back</a>
