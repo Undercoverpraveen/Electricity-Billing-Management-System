@@ -1,0 +1,12 @@
+<h2>All Bills</h2>
+<table border="1">
+    <tr>
+        <th>ID</th><th>Name</th><th>Units</th><th>Total</th><th>Date</th>
+    </tr>
+    {% for bill in bills %}
+    <tr>
+        <td>{{ bill[0] }}</td><td>{{ bill[1] }}</td><td>{{ bill[2] }}</td><td>{{ bill[3] }}</td><td>{{ bill[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/">Back</a>
